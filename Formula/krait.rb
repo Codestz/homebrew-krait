@@ -7,20 +7,20 @@ class Krait < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Codestz/krait/releases/download/v#{version}/krait-aarch64-apple-darwin.tar.gz"
-      sha256 "862ba48ebd9db8e3240d90b4e3c661f647ddc301d7f556115c820c631555198e"
+      sha256 "92269fffe9af701c7ecba109d80eb9829f529f774ff3afd2ba9522a861d9786d"
     else
       url "https://github.com/Codestz/krait/releases/download/v#{version}/krait-x86_64-apple-darwin.tar.gz"
-      sha256 "4e1b06f13b0c3ed97b269b9be90272d626abcc4ae8655f4623cdc4fd4af81ad8"
+      sha256 "e25b3bd452f14ffd8a36d511eadfbb999fa171f749f4448e0e50322e2e66ef51"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Codestz/krait/releases/download/v#{version}/krait-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "62dbf486b8bb239823785a7020dc06b34ac2a4a85ff35dd9bc664dfe9f1ed28e"
+      sha256 "74a44878313ef6b0c067bdf1250f4a6a037277aed48680daa77b02d73b17e6e9"
     else
       url "https://github.com/Codestz/krait/releases/download/v#{version}/krait-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ddf6493f3d7d36d010f29fdfe44b1c0198d9f0ab7a3728f884b4e75d62499ddb"
+      sha256 "a8c77dab3844cd1bea4ff88a6d0716ae566bf506c0d4ea0f532b072c324039b8"
     end
   end
 
