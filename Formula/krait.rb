@@ -7,20 +7,20 @@ class Krait < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Codestz/krait/releases/download/v#{version}/krait-aarch64-apple-darwin.tar.gz"
-      sha256 "a54ee6e29a04a9b2c5d433ebf5222ba51e5334f4cbb1521c6f5cd4d8d2fd9cb4"
+      sha256 "862ba48ebd9db8e3240d90b4e3c661f647ddc301d7f556115c820c631555198e"
     else
       url "https://github.com/Codestz/krait/releases/download/v#{version}/krait-x86_64-apple-darwin.tar.gz"
-      sha256 "cc62194541f917dba9642b5fc221efa69616e318879a1251fd6bf55cb0ed2316"
+      sha256 "4e1b06f13b0c3ed97b269b9be90272d626abcc4ae8655f4623cdc4fd4af81ad8"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Codestz/krait/releases/download/v#{version}/krait-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "60a41654adb1bbf3e4f165d835b38ffc738f1181cd4665beb200a1c08b476e58"
+      sha256 "62dbf486b8bb239823785a7020dc06b34ac2a4a85ff35dd9bc664dfe9f1ed28e"
     else
       url "https://github.com/Codestz/krait/releases/download/v#{version}/krait-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "4db2823bf8a089b6b116fcc4620aca818e5c6475e1b553770ca6a58ef9fdd340"
+      sha256 "ddf6493f3d7d36d010f29fdfe44b1c0198d9f0ab7a3728f884b4e75d62499ddb"
     end
   end
 
@@ -31,7 +31,7 @@ class Krait < Formula
   def caveats
     <<~EOS
       krait auto-installs language servers on first use.
-      Run `krait init` in your project to generate a workspace config.
+      Run  in your project to generate a workspace config.
 
       TypeScript: npm install -g @vtsls/language-server
       Go:         go install golang.org/x/tools/gopls@latest
